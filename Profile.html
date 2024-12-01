@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page - Meo Thrift</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @layer utilities {
+            .bg-custom-gray { background-color: #8E8B8B; }
+            .text-custom-gray { color: #756E6E; }
+        }
+    </style>
+    <link rel="stylesheet" href="stylesp.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center py-4 px-6 bg-[#D9D9D9]">
+        <div class="text-xl font-bold">Meo Thrift</div>
+        <div class="flex space-x-4">
+            <a href="#" class="hover:text-custom-gray">Produk</a>
+            <a href="#" class="hover:text-custom-gray">SALE</a>
+            <a href="#" class="hover:text-custom-gray">Brands</a>
+            <a href="#" class="hover:text-custom-gray">Category</a>
+            <a href="#" class="hover:text-custom-gray">Shipping</a>
+            <a href="#" class="hover:text-custom-gray">Contact</a>
+        </div>
+        <div class="flex space-x-4">
+            <a href="Login.html" class="hover:text-custom-gray">Login</a>
+            <a href="Checkout.html">
+                <button class="hover:text-custom-gray">🛒</button>
+            </a>
+            <a href="Profile.html" class="hover:text-custom-gray">Profile</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="p-6">
+        <div class="container flex">
+            <!-- Sidebar Navigation -->
+            <nav class="sidebar w-1/4 bg-[#F5F5F5] rounded-md p-4">
+                <ul class="space-y-2">
+                    <li><a href="Homepage.html" class="hover:text-custom-gray">Home</a></li>
+                    <li><a href="#" class="hover:text-custom-gray">Produk</a></li>
+                    <li><a href="#" class="hover:text-custom-gray">History</a></li>
+                    <li><a href="#" class="hover:text-custom-gray">Setting</a></li>
+                    <li><a href="#" class="hover:text-custom-gray">Logout</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Content Area -->
+            <div class="content w-3/4 ml-4">
+                <!-- Personal Information Section -->
+                <section class="personal-info mb-8 bg-white p-4 rounded-md shadow">
+                    <div class="info-header flex justify-between items-center">
+                        <h2 class="text-2xl font-bold">Personal Information</h2>
+                        <a href="#" class="text-blue-500">EDIT PROFILE</a>
+                    </div>
+                    <div class="info-content flex mt-4">
+                        <div class="avatar w-1/3 bg-gray-200 h-32 rounded-md"></div>
+                        <div class="info-details ml-4">
+                            <p><strong>Name:</strong> Vincent Paulo De La Cruz</p>
+                            <p><strong>Email:</strong> VincentPauloDLC@gmail.com</p>
+                            <p><strong>Phone Number:</strong> +62 884-2748-8829</p>
+                            <p><strong>Address:</strong> Somewhere in this World, Asia Continent, Indonesia<br>
+                                Jalan yang suka Jalan-jalan, nomor 22, Kabupaten bebas, Kota BESAR, Kampung KECIL
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- My Order Section -->
+                <section class="my-order bg-white p-4 rounded-md shadow">
+                    <div class="order-header flex justify-between items-center mb-4">
+                        <h2 class="text-2xl font-bold">My Order</h2>
+                        <div class="order-tabs space-x-2">
+                            <button class="bg-gray-200 p-2 rounded">Delivered</button>
+                            <button class="bg-gray-200 p-2 rounded">Processing</button>
+                            <button class="bg-gray-200 p-2 rounded">Cancelled</button>
+                        </div>
+                    </div>
+                    <div class="order-list">
+                        <div class="order-item border-b py-2 flex justify-between">
+                            <div class="order-details">
+                                <p><strong >Order No:</strong> 712</p>
+                                <p><strong>Status:</strong> Delivered</p>
+                                <p><strong>Quantity:</strong> 2</p>
+                                <p><strong>Total Harga:</strong> Rp. 397.000</p>
+                            </div>
+                            <div class="order-date text-right">
+                                <p>23/Januari/2024</p>
+                                <button class="bg-blue-500 text-white p-1 rounded">Details</button>
+                            </div>
+                        </div>
+                        <div class="order-item border-b py-2 flex justify-between">
+                            <div class="order-details">
+                                <p><strong>Order No:</strong> 713</p>
+                                <p><strong>Status:</strong> Delivered</p>
+                                <p><strong>Quantity:</strong> 1</p>
+                                <p><strong>Total Harga:</strong> Rp. 150.000</p>
+                            </div>
+                            <div class="order-date text-right">
+                                <p>24/Januari/2024</p>
+                                <button class="bg-blue-500 text-white p-1 rounded">Details</button>
+                            </div>
+                        </div>
+                        <div class="order-item border-b py-2 flex justify-between">
+                            <div class="order-details">
+                                <p><strong>Order No:</strong> 714</p>
+                                <p><strong>Status:</strong> Processing</p>
+                                <p><strong>Quantity:</strong> 3</p>
+                                <p><strong>Total Harga:</strong> Rp. 600.000</p>
+                            </div>
+                            <div class="order-date text-right">
+                                <p>25/Januari/2024</p>
+                                <button class="bg-blue-500 text-white p-1 rounded">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#D9D9D9] py-8 text-center">
+        <div class="flex justify-center space-x-16">
+            <div>
+                <h4 class="font-bold">Need help?</h4>
+                <a href="#" class="text-[#756E6E]">Contact Us</a>
+            </div>
+            <div>
+                <h4 class="font-bold">Customer Support</h4>
+                <ul class="text-[#756E6E] space-y-2">
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Corporate Info</h4>
+                <ul class="text-[#756E6E] space-y-2">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Investors</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scriptp.js"></script>
+</body>
+</html>

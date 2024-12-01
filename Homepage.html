@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meo Thrift</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @layer utilities {
+      .bg-custom-gray { background-color: #8E8B8B; }
+      .text-custom-gray { color: #756E6E; }
+    }
+  </style>
+</head>
+<body class="bg-[#F5F5F5] text-[#000000]">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center py-4 px-6 bg-[#D9D9D9]">
+    <div class="text-xl font-bold">Meo Thrift</div>
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-custom-gray">Produk</a>
+      <a href="#" class="hover:text-custom-gray">SALE</a>
+      <a href="#" class="hover:text-custom-gray">Brands</a>
+      <a href="#" class="hover:text-custom-gray">Category</a>
+      <a href="#" class="hover:text-custom-gray">Shipping</a>
+      <a href="#" class="hover:text-custom-gray">Contact</a>
+    </div>
+    <div class="flex space-x-4">
+      <a href="Login.html" class="hover:text-custom-gray">Login</a>
+      <a href="Checkout.html">
+        <button class="hover:text-custom-gray">🛒</button>
+      </a>
+      <a href="Profile.html" class="hover:text-custom-gray">Profile</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-white">
+    <h1 class="text-4xl font-bold text-custom-gray">Mari, Belanja di Meo Thrift</h1>
+    <p class="mt-4 text-lg text-[#756E6E] max-w-2xl mx-auto">
+      Meo Thrift adalah platform e-commerce yang fokus menjual koleksi pakaian thrift (secondhand) berkualitas. 
+      Dengan misi menghadirkan fashion ramah lingkungan dan terjangkau, Meo Thrift menyediakan berbagai pilihan 
+      gaya pakaian vintage dan modern yang telah dikurasi secara selektif.
+    </p>
+    <div class="mt-8">
+      <button class="px-6 py-2 bg-[#8E8B8B] text-white rounded-md hover:bg-[#756E6E]">Category</button>
+      <button class="px-6 py-2 bg-[#D9D9D9] text-black rounded-md hover:bg-[#8E8B8B]">All Item</button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-16">
+    <div class="grid grid-cols-4 gap-8 max-w-6xl mx-auto">
+      <img src="Image/Real Cozy Oversized Hoodie - Coffee _ M.jpg" alt="Product 1" class="rounded-md">
+      <img src="Image/sFVKlbm-.jpg" alt="Product 2" class="rounded-md">
+      <img src="Image/y3lkW6BY.jpg" alt="Product 3" class="rounded-md">
+      <img src="Image/LANDBROKE GROVE - M _ Black.jpg" alt="Product 4" class="rounded-md">
+    </div>
+  </section>
+
+  <!-- Discount Banner -->
+<section class="bg-[#D9D9D9] py-16 text-center">
+  <h2 class="text-4xl font-bold text-custom-gray">DISCOUNT</h2>
+  <p class="text-2xl mt-4">UP TO <span class="font-extrabold">30%</span></p>
+  <div class="image-container mt-4">
+    <img src="Image/banner.jpg" alt="Discount Banner" class="object-cover w-full h-48" />
+  </div>
+  <button class="mt-8 px-6 py-2 bg-[#756E6E] text-white rounded-md hover:bg-[#8E8B8B]">Shop Now</button>
+</section>
+
+<style>
+  .image-container {
+    overflow: hidden; /* Menghilangkan bagian gambar yang keluar dari container */
+    width: 100%; /* Mengatur lebar container sesuai dengan lebar elemen induk */
+    height: 200px; /* Atur tinggi sesuai kebutuhan */
+  }
+  img {
+    object-fit: cover; /* Mengatur gambar agar mengisi container dengan memotong jika perlu */
+    width: 100%; /* Mengatur lebar gambar 100% dari container */
+    height: 100%; /* Mengatur tinggi gambar 100% dari container */
+  }
+</style>
+
+  <!-- Reviews Section -->
+  <section class="py-16 bg-white">
+    <div class="text-center">
+      <h3 class="text-2xl font-bold text-custom-gray">Our Rating</h3>
+      <p class="text-[#8E8B8B]">Based on 2301 reviews</p>
+    </div>
+    <div class="grid grid-cols-3 gap-8 mt-8 max-w-6xl mx-auto">
+      <div class="text-center">
+        <p class="text-lg">Great value and quality</ <p class="text-sm text-[#8E8B8B]">- John Doe, 6 days ago</p>
+      </div>
+      <div class="text-center">
+        <p class="text-lg">Beautiful design!</p>
+        <p class="text-sm text-[#8E8B8B]">- John Doe, 6 days ago</p>
+      </div>
+      <div class="text-center">
+        <p class="text-lg">Exactly what I wanted</p>
+        <p class="text-sm text-[#8E8B8B]">- John Doe, 6 days ago</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#D9D9D9] py-8 text-center">
+    <div class="flex justify-center space-x-16">
+      <div>
+        <h4 class="font-bold">Need help?</h4>
+        <a href="#" class="text-[#756E6E]">Contact Us</a>
+      </div>
+      <div>
+        <h4 class="font-bold">Customer Support</h4>
+        <ul class="text-[#756E6E] space-y-2">
+          <li><a href="#">Payments</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold">Corporate Info</h4>
+        <ul class="text-[#756E6E] space-y-2">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Investors</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

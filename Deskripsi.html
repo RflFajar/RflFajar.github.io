@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meo Thrift</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @layer utilities {
+      .bg-custom-gray { background-color: #8E8B8B; }
+      .text-custom-gray { color: #756E6E; }
+    }
+  </style>
+  <script>
+    function showNotification() {
+      const notification = document.getElementById('notification');
+      notification.classList.remove('hidden');
+      
+      setTimeout(() => {
+        notification.classList.add('hidden');
+      }, 3000); // Notifikasi akan hilang setelah 3 detik
+    }
+  </script>
+</head>
+<body class="bg-[#F5F5F5] text-[#000000]">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center py-4 px-6 bg-[#D9D9D9]">
+    <div class="text-xl font-bold">Meo Thrift</div>
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-custom-gray">Produk</a>
+      <a href="#" class="hover:text-custom-gray">SALE</a>
+      <a href="#" class="hover:text-custom-gray">Brands</a>
+      <a href="#" class="hover:text-custom-gray">Category</a>
+      <a href="#" class="hover:text-custom-gray">Shipping</a>
+      <a href="#" class="hover:text-custom-gray">Contact</a>
+    </div>
+    <div class="flex space-x-4">
+      <a href="Login.html" class="hover:text-custom-gray">Login</a>
+      <a href="Checkout.html">
+        <button class="hover:text-custom-gray">🛒</button>
+      </a>
+      <a href="Profile.html" class="hover:text-custom-gray">Profile</a>
+    </div>
+  </nav>
+
+  <!-- Notification -->
+  <div id="notification" class="fixed top-4 right-4 bg-green-500 text-white p-4 rounded-lg hidden">
+    Produk telah ditambahkan ke keranjang!
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mx-auto p-6">
+      <!-- Product Main Section -->
+      <div class="bg-white rounded-lg shadow-lg p-6">
+          <div class="flex flex-wrap gap-6">
+              <!-- Main Image -->
+              <img src="Image/Real Cozy Oversized Hoodie - Coffee _ M.jpg" alt="Hoodie Keren" class="w-full md:w-1/2 rounded-lg">
+              
+              <!-- Product Details -->
+              <div class="flex-1">
+                  <h1 class="text-2xl font-bold">Hoodie Keren</h1>
+                  <p class="text-sm text-gray-600 mt-2">PPPPP LOREM IPSUM</p>
+                  <p class="text-xl font-semibold text-[#756E6E] mt-4">Rp 1.000.000,00</p>
+
+                  <!-- Color Selector -->
+                  <div class="mt-4">
+                      <label for="color" class="text-sm font-medium">Color:</label>
+                      <select id="color" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-[#756E6E] focus:border-[#756E6E]">
+                          <option value="pink">Pink</option>
+                      </select>
+                  </div>
+
+                  <!-- Add to Cart -->
+                  <button onclick="showNotification()" class="mt-6 bg-[#756E6E] text-white px-6 py-2 rounded-lg hover:bg-[#B7B3B3]">
+                      ADD TO CART
+                  </button>
+
+                  <!-- Availability -->
+                  <p class="mt-4 text-sm text-[#B7B3B3]">Available • Shipping within 3-4 days</p>
+              </div>
+          </div>
+
+          <!-- Additional Images -->
+          <div class="flex gap-4 mt-6">
+              <img src="Image/0e896f843468f9e72125066e4f8c1c94.jpg" alt="Additional Product 1" class="w-24 h-24 object-cover rounded-lg bg-[#D9D9D9]">
+              <img src="Image/3037cf684797604dea8a33afb6786598.jpg" alt="Additional Product 2" class="w-24 h-24 object-cover rounded-lg bg-[#D9D9D9]">
+          </div>
+      </div>
+
+      <!-- Related Products -->
+      <div class="mt-12">
+          <h2 class="text-xl font-bold">Related Produk</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+              <!-- Product Card -->
+              <div class="bg-[#F5F5F5] rounded-lg shadow-lg p-4 hover:scale-105 transform transition">
+                  <div class="w-full h-36 bg-[#D9D9D9] rounded-lg"></div>
+                  <p class="mt-2 text-center text-sm">Product Name</p>
+                  <p class="text-center text-sm font-semibold">Rp 250.000,00</p>
+              </div>
+              <div class="bg-[#F5F5F5] rounded-lg shadow-lg p-4 hover:scale-105 transform transition">
+                  <div class="w-full h-36 bg-[#D9D9D9] rounded-lg"></div>
+                  <p class="mt-2 text-center text-sm">Product Name</p>
+                  <p class="text-center text-sm font-semibold">Rp 250.000,00</p>
+              </div>
+              <div class="bg-[#F5F5F5] rounded-lg shadow-lg p-4 hover:scale-105 transform transition">
+                  <div class="w-full h-36 bg-[#D9D9D9] rounded-lg"></div>
+                  <p class="mt-2 text-center text-sm">Product Name</p>
+                  <p class="text-center text-sm font-semibold">Rp 250.000,00</p>
+              </div>
+              <div class="bg-[#F5F5F5] rounded-lg shadow-lg p-4 hover:scale-105 transform transition">
+                  <div class="w-full h-36 bg-[#D9D9D9] rounded-lg"></div>
+                  <p class="mt-2 text-center text-sm">Product Name</p>
+                  <p class="text-center text-sm font-semibold">Rp 250.000,00</p>
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#D9D9D9] py-8 text-center">
+      <div class="flex justify-center space-x-16">
+          <div>
+              <h4 class="font-bold">Need help?</h4>
+              <a href="#" class="text-[#756E6E]">Contact Us</a>
+          </div>
+          <div>
+              <h4 class="font-bold">Customer Support</h4>
+              <ul class="text-[#756E6E] space-y-2">
+                  <li><a href="#">Payments</a></li>
+                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+          </div>
+          <div>
+              <h4 class="font-bold">Corporate Info</h4>
+              <ul class="text-[#756E6E] space-y-2">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Brands</a></li>
+                  <li><a href="#">Affiliates</a></li>
+                  <li><a href="#">Investors</a></li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+</body>
+</html>

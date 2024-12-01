@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="background-blur"></div>
+    <div class="signup-box">
+      <div class="signup-header">
+        <h1>Hello, <br><span>Sign Up!</span></h1>
+      </div>
+
+      <div class="login-link">
+        <p>Already have an account? <a href="Login.html">Log in</a></p>
+      </div>
+
+      <form class="signup-form" id="signup-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <div class="input-container">
+            <input type="text" id="name" placeholder="Your name" required>
+            <span class="clear-input" onclick="clearInput('name')">✖</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <div class="input-container">
+            <input type="email" id="email" placeholder="Example@gmail.com" required>
+            <span class="clear-input" onclick="clearInput('email')">✖</span>
+          </div>
+        </div>
+        <div class="form-group password-container">
+          <label for="password">Password</label>
+          <div class="input-container">
+            <input type="password" id="password" placeholder="Enter password" required>
+            <button type="button" class="toggle-password" onclick="togglePassword('password')">👁️</button>
+          </div>
+        </div>
+        <button type="submit" class="signup-button">Create account</ button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword(passwordFieldId) {
+      const passwordField = document.getElementById(passwordFieldId);
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+    }
+
+    function clearInput(inputId) {
+      document.getElementById(inputId).value = '';
+    }
+
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Mencegah pengiriman form
+      // Arahkan ke Login.html
+      window.location.href = 'Login.html'; // Ganti dengan logika yang sesuai
+    });
+  </script>
+</body>
+</html>
