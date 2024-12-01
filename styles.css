@@ -30,7 +30,7 @@ body {
   width: 600px; /* Ubah menjadi 100% untuk menutupi seluruh lebar */
   height: 530px; /* Ubah menjadi 100% untuk menutupi seluruh tinggi */
   border-radius: 20px;
-  background: url('Image/bg.jpeg') no-repeat center; /* Pastikan gambar terpusat */
+  background: url('bg.jpeg') no-repeat center; /* Pastikan gambar terpusat */
   background-size: cover; /* Pastikan gambar menutupi seluruh area */
   filter: blur(3px);
   z-index: 1; /* Pastikan berada di belakang konten */
