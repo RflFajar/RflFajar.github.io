@@ -37,9 +37,5 @@ document.getElementById('proof-of-payment').addEventListener('change', () => {
   
   // Update pay-now button event listener
   document.getElementById('pay-now').addEventListener('click', () => {
-    if (document.getElementById('proof-of-payment').files.length > 0) {
-      alert('Pembayaran berhasil diproses!');
-    } else {
-      alert('Please upload proof of payment first!');
-    }
-  });
+    alert('Silakan hubungi kami melalui WhatsApp untuk menyelesaikan pembayaran!');
+});
